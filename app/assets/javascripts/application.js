@@ -12,4 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_tree ./models
+//= require_tree ./controllers
+//= require_tree ./views
 //= require_tree .
+
+function start(){
+  var sController = new SuperheroController()
+  sController.init()
+}
+
+$(start)
